@@ -18,20 +18,18 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
     faceReaction.textContent = faces();
 }));
 
-
-
 function checkWinner() {
-    if (player == computer) {
-        return "IT'S A TIE!!";
-    } else if (computer == "ROCK") {
-        return (player == "PAPER") ? "You Win" : "You Lose!"
-    } else if (computer == "PAPER") {
-        return (player == "SCISSORS") ? "You Win" : "You Lose!"
-    } else if (computer == "SCISSORS") {
-        return (player == "ROCK") ? "You Win" : "You Lose!"
+    if (player === computer) {
+        return "Draw!";
+    } else if (computer === "ROCK") {
+        return (player === "PAPER") ? "You Win!" : "You Lose!"
+    } else if (computer === "PAPER") {
+        return (player === "SCISSORS") ? "You Win!" : "You Lose!"
+    } else if (computer === "SCISSORS") {
+        return (player === "ROCK") ? "You Win!" : "You Lose!"
     }
-
 }
+
 
 function faces() {
     if (player == computer) {
