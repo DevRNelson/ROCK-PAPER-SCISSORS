@@ -9,5 +9,9 @@ let computer;
 
 choiceBtns.forEach(button.addEventListener("click", () => {
     playerSelection = button.textContent;
-
+    computerTurn();
 }));
+
+function computerTurn() {
+    const randNum = math.floor(math.random() * 3) + 1;
+}
