@@ -1,0 +1,26 @@
+* {
+    border: solid 2px;
+    margin: 0;
+    padding: 0;
+}
+
+#title {
+    text-align: center;
+    align-items: center;
+}
+
+#CHOICES {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#CHOICES img {
+    height: auto;
+    width: 250px;
+    border-radius: 200px;
+}
+
+#CHOICES>div {
+    margin: 3vmin;
+}

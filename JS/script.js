@@ -1,23 +1,33 @@
 let rock = "ROCK!"
 let paper = "PAPER!"
 let scissors = "SCISSORS"
-let playerSelection = parseInt(prompt("Please Input your selection: 1 = Rock  2 = Paper 3 = Scissors!"));
+let playerSelection = parseInt(prompt("Please select your number!  |1 = Rock | 2 = Paper | 3 = Scissors|"));
 
 
 
-function getComputerChhoice() {
-    let randomNumber = math.floor(math.random() * 3)
+function playRound() {
+    let computerChoice = math.floor(math.random() * 3)
 
-    if (randomNumber == 1) {
-        console.log(rock)
-    } else if (randomNumber == 2) {
-        console.log(paper)
+    if (playerSelection === getComputerChoice) {
+        console.log("it's a tie!")
+    } else if (computerChoice === 1) {
+        if (playerSelection === 2) {
+            console.log("Congragulations you beat Rock with Paper!!")
+        } else {
+            console.log("Sorry you lost Rock")
+        }
+    } else if (computerChoice === 2) {
+        if (playerSelection === 3) {
+            console.log("Congragulations you beat Paper with Scissors!")
+        } else {
+            console.log("Sorry you lost to Paper")
+        }
+    } else(computerChoice === 3)
+    if (playerSelection === 1) {
+        console.log("Congragulations you beat Scissors with Rock!!")
     } else {
-        console.log(scissors)
+        console.log("Sorry You lost to Scissors")
     }
-
 }
 
-function playRound(getComputerChhoice, playerSelection) {
-    if (playerSelection == ["ROCK", "rock", "Rock"])
-}
+console.log()
