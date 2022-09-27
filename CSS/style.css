@@ -11,10 +11,11 @@ html {
 }
 
 #title {
-    padding-top: 30px;
+    padding-top: 5px;
     text-align: center;
     align-items: center;
-    margin-bottom: 30PX;
+    margin-bottom: 5PX;
+    text-decoration: underline;
 }
 
 #computerArea h3,
@@ -23,9 +24,16 @@ img {
 }
 
 .results {
-    width: auto;
+    display: inline-block;
+    width: 200px;
     text-align: center;
     align-items: center;
+    color: rgb(255, 255, 255);
+    border: solid white;
+}
+
+#SCORES {
+    text-decoration: underline;
 }
 
 #CHOICES,
@@ -39,14 +47,38 @@ img {
     align-items: center;
 }
 
+#computerFace {
+    font-size: 1.5rem;
+    color: rgb(0, 255, 76);
+}
+
 #CHOICES img {
     height: auto;
     width: 250px;
-    border-radius: 20px;
+}
+
+#CHOICES :hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+button :hover {
+    filter: invert(1);
+}
+
+#CHOICES :focus {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    filter: invert(1);
 }
 
 #CHOICES>div {
     margin: 3vmin;
+}
+
+#CHOICES button {
+    background-color: black;
+    color: white;
 }
 
 #SCORES>div {
