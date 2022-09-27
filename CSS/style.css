@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(86, 108, 204);
+    background-color: rgb(20, 17, 23);
     color: white;
 }
 
@@ -7,6 +7,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
 #title {
@@ -16,7 +17,9 @@ html {
 }
 
 #CHOICES,
-#SCORES {
+#SCORES,
+#computer,
+#processor {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +30,13 @@ html {
 #CHOICES img {
     height: auto;
     width: 250px;
-    border-radius: 200px;
+    border-radius: 20px;
+}
+
+#CHOICES :hover {
+    height: auto;
+    width: 300px;
+    border-radius: 100px;
 }
 
 #CHOICES>div {
@@ -36,4 +45,10 @@ html {
 
 #SCORES>div {
     margin: 4vmin;
+}
+
+#processor img {
+    height: auto;
+    width: 250px;
+    border-radius: 100px;
 }
