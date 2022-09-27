@@ -1,19 +1,20 @@
-const playerScore = document.querySelector("#player");
-const computerScore = document.querySelector("#computer");
-const resu = document.querySelector("#resultText");
-const choiceBtns = document.querySelectorAll(".choiceBtn");
+const playerT = document.querySelector("#player");
+const computerT = document.querySelector("#computer");
+const resultT = document.querySelector("#resultText");
+const choiceBtns = document.querySelectorAll(".choice");
 let result;
-let playerSelection;
+let player;
 let computer;
 
-choiceBtns.forEach(button.addEventListener("click", () => {
+choiceBtns.forEach(button => button.addEventListener("click", () => {
 
-    playerSelection = button.textContent;
+    player = button.textContent;
     computerChoice();
-    player.textContent = `Player: ${playerScore}`;
-    computer.textContent = `Player: ${computerScore}`;
-    resultText.textContent = checkWinner();
+    playerT.textContent = `YOU CHOSE  ${player}`;
+    computerT.textContent = `COMPUTER CHOSE ${computer}`;
+    resultT.textContent = checkWinner();
 }));
+
 
 
 function checkWinner() {
@@ -30,7 +31,8 @@ function checkWinner() {
 }
 
 function computerChoice() {
-    const randNum = math.floor(math.random() * 3) + 1;
+
+    const randNum = Math.floor(Math.random() * 3) + 1;
 
     switch (randNum) {
         case 1:
