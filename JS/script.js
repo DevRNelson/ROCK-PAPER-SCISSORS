@@ -2,9 +2,11 @@ const playerT = document.querySelector("#player");
 const computerT = document.querySelector("#computer");
 const resultT = document.querySelector("#resultText");
 const choiceBtns = document.querySelectorAll(".choice");
+const faceReaction = document.getElementById("computerFace")
 let result;
 let player;
 let computer;
+let img;
 
 choiceBtns.forEach(button => button.addEventListener("click", () => {
 
@@ -13,13 +15,14 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
     playerT.textContent = `YOU CHOSE  ${player}`;
     computerT.textContent = `COMPUTER CHOSE ${computer}`;
     resultT.textContent = checkWinner();
+    faceReaction.textContent = faces();
 }));
 
 
 
 function checkWinner() {
     if (player == computer) {
-        return "DRAW!";
+        return "IT'S A TIE!!";
     } else if (computer == "ROCK") {
         return (player == "PAPER") ? "You Win" : "You Lose!"
     } else if (computer == "PAPER") {
@@ -29,6 +32,21 @@ function checkWinner() {
     }
 
 }
+
+function faces() {
+    if (player == computer) {
+        return ":|";
+    } else if (computer == "ROCK") {
+        return (player == "PAPER") ? ">:0" : ":)"
+    } else if (computer == "PAPER") {
+        return (player == "SCISSORS") ? ">:0" : ":)"
+    } else if (computer == "SCISSORS") {
+        return (player == "ROCK") ? ">:0" : ":)"
+    }
+
+}
+
+
 
 function computerChoice() {
 
