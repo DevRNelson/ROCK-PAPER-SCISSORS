@@ -33,11 +33,7 @@ html {
     border-radius: 20px;
 }
 
-#CHOICES :hover {
-    height: auto;
-    width: 300px;
-    border-radius: 100px;
-}
+#CHOICES button {}
 
 #CHOICES>div {
     margin: 3vmin;
@@ -51,4 +47,8 @@ html {
     height: auto;
     width: 250px;
     border-radius: 100px;
+}
+
+.choice text {
+    display: none;
 }
