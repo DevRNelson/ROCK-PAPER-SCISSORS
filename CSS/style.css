@@ -1,18 +1,27 @@
+html {
+    background-color: rgb(86, 108, 204);
+    color: white;
+}
+
 * {
-    border: solid 2px;
     margin: 0;
     padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #title {
+    padding-top: 30px;
     text-align: center;
     align-items: center;
 }
 
-#CHOICES {
+#CHOICES,
+#SCORES {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 #CHOICES img {
@@ -23,4 +32,8 @@
 
 #CHOICES>div {
     margin: 3vmin;
+}
+
+#SCORES>div {
+    margin: 4vmin;
 }
