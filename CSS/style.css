@@ -1,5 +1,5 @@
 html {
-    background-color: rgb(20, 17, 23);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -14,6 +14,12 @@ html {
     padding-top: 30px;
     text-align: center;
     align-items: center;
+    margin-bottom: 30PX;
+}
+
+#computerArea h3,
+img {
+    padding-bottom: 20px;
 }
 
 #CHOICES,
@@ -33,8 +39,6 @@ html {
     border-radius: 20px;
 }
 
-#CHOICES button {}
-
 #CHOICES>div {
     margin: 3vmin;
 }
@@ -45,10 +49,8 @@ html {
 
 #processor img {
     height: auto;
-    width: 250px;
-    border-radius: 100px;
+    width: 45VMIN;
+    border-radius: 200px;
 }
 
-.choice text {
-    display: none;
-}
+.choice p {}
