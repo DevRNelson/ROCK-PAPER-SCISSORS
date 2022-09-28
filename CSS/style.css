@@ -1,5 +1,6 @@
 html {
     background-color: black;
+    margin-top: 30px;
     color: white;
 }
 
@@ -36,6 +37,7 @@ img {
     text-decoration: underline;
 }
 
+#CHOICES,
 #SCORES,
 #computer,
 #processor {
@@ -74,17 +76,17 @@ img {
 #button2,
 #button3 p {
     font-size: 1.5rem;
-    color: white;
 }
 
 #button1,
 #button2,
 #button3 {
     line-height: 350px;
+    color: white;
 }
 
 button :hover {
-    color: rgb(0, 4, 255);
+    color: rgb(255, 0, 200);
     filter: invert(1);
 }
 
