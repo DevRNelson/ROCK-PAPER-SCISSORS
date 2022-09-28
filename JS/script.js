@@ -6,7 +6,6 @@ const faceReaction = document.getElementById("computerFace")
 let result;
 let player;
 let computer;
-let img;
 
 choiceBtns.forEach(button => button.addEventListener("click", () => {
 
