@@ -19,7 +19,7 @@ choiceBtns.forEach(button => button.addEventListener("click", () => {
 
 function checkWinner() {
     if (player === computer) {
-        return "Draw!";
+        return "It's a Tie!";
     } else if (computer === "ROCK") {
         return (player === "PAPER") ? "You Win!" : "You Lose!"
     } else if (computer === "PAPER") {
