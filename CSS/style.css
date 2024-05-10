@@ -80,7 +80,7 @@ img {
 
 #button1 {
     padding: 8Vmin;
-    background: url(/IMAGES/ROCK1.png), rgb(30, 30, 31);
+    background: url(/IMAGES/ROCK1.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@ img {
 
 #button2 {
     padding: 8vmin;
-    background: url(/IMAGES/PAPER.png), rgb(30, 30, 31);
+    background: url(/IMAGES/PAPER.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,11 +96,12 @@ img {
 
 #button3 {
     padding: 8vmin;
-    background: url(/IMAGES/SCISSORS.png), rgb(30, 30, 31);
+    background: url(/IMAGES/SCISSORS.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 button:hover {
     color: rgb(255, 0, 200);
