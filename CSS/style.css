@@ -1,5 +1,5 @@
 html {
-    background-color: black;
+    background-color: rgb(30, 30, 31);
     margin-top: 30px;
     color: white;
 }
@@ -15,7 +15,7 @@ html {
     padding-top: 5px;
     text-align: center;
     align-items: center;
-    margin-bottom: 5PX;
+    margin-bottom: 5px;
     text-decoration: underline;
 }
 
@@ -48,6 +48,39 @@ img {
     align-items: center;
 }
 
+#button1,
+#button2,
+#button3 {
+    padding: 2vmin; /* Adjust padding for a square shape */
+    background-size: contain;
+    background-position: relative;
+    background-repeat: no-repeat;
+    font-size: 1.5rem;
+    position: relative;
+    color: white;
+    display: inline-block; 
+    vertical-align: top;  
+    width: 300px;  
+    height: 300px; 
+    line-height: 150px;  
+}
+
+ 
+
+#button1 p,
+#button2 p,
+#button3 p {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;  
+    top: 200px;
+    left: 50%;  
+    transform: translateX(-50%); 
+    width: 100%;  
+    text-align: center; 
+}
+
+
 #button1 {
     padding: 8Vmin;
     background: url(/IMAGES/ROCK1.png);
@@ -72,20 +105,7 @@ img {
     background-repeat: no-repeat;
 }
 
-#button1,
-#button2,
-#button3 p {
-    font-size: 1.5rem;
-}
-
-#button1,
-#button2,
-#button3 {
-    line-height: 350px;
-    color: white;
-}
-
-button :hover {
+button:hover {
     color: rgb(255, 0, 200);
     filter: invert(1);
 }
@@ -105,7 +125,7 @@ button :hover {
 
 #processor img {
     height: auto;
-    width: 45VMIN;
+    width: 45vmin;
     border-radius: 200px;
 }
 
@@ -113,30 +133,11 @@ button :hover {
     #button1,
     #button2,
     #button3 {
-        line-height: 0px;
+        line-height: 0;
         color: white;
         border: solid white 2px;
-    }
-    #button1 {
         padding: 2vmin;
         background: none;
-        background-size: contain;
-        background-position: relative;
-        background-repeat: no-repeat;
-    }
-    #button2 {
-        padding: 2vmin;
-        background: none;
-        background-size: contain;
-        background-position: relative;
-        background-repeat: no-repeat;
-    }
-    #button3 {
-        padding: 2vmin;
-        background: none;
-        background-size: contain;
-        background-position: relative;
-        background-repeat: no-repeat;
     }
     button {
         border: none;
@@ -147,32 +148,10 @@ button :hover {
     #button1,
     #button2,
     #button3 {
-        line-height: 0px;
+        line-height: 0;
         color: white;
-        border: solid white 0px;
-    }
-    #button1 {
+        border: solid white 0;
         padding: 0;
         background: none;
-        background-size: contain;
-        background-position: relative;
-        background-repeat: no-repeat;
-    }
-    #button2 {
-        padding: 0;
-        background: none;
-        background-size: contain;
-        background-position: relative;
-        background-repeat: no-repeat;
-    }
-    #button3 {
-        padding: 0;
-        background: none;
-        background-size: contain;
-        background-position: relative;
-        background-repeat: no-repeat;
-    }
-    button {
-        border: none;
     }
 }
