@@ -51,57 +51,54 @@ img {
 #button1,
 #button2,
 #button3 {
-    padding: 2vmin; /* Adjust padding for a square shape */
+    padding: 2vmin;
     background-size: contain;
     background-position: relative;
     background-repeat: no-repeat;
     font-size: 1.5rem;
     position: relative;
     color: white;
-    display: inline-block; 
-    vertical-align: top;  
-    width: 300px;  
-    height: 300px; 
-    line-height: 150px;  
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 300px;
+    line-height: 150px;
 }
-
- 
 
 #button1 p,
 #button2 p,
 #button3 p {
     font-size: 1.5rem;
     position: absolute;
-    bottom: 0;  
+    bottom: 0;
     top: 200px;
-    left: 50%;  
-    transform: translateX(-50%); 
-    width: 100%;  
-    text-align: center; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
 }
-
 
 #button1 {
     padding: 8Vmin;
-    background: url(/IMAGES/ROCK1.png);
+    background: url(/IMAGES/ROCK1.png), rgb(30, 30, 31);
     background-size: contain;
-    background-position: relative;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 #button2 {
     padding: 8vmin;
-    background: url(/IMAGES/PAPER.png);
+    background: url(/IMAGES/PAPER.png), rgb(30, 30, 31);
     background-size: contain;
-    background-position: relative;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
 #button3 {
     padding: 8vmin;
-    background: url(/IMAGES/SCISSORS.png);
+    background: url(/IMAGES/SCISSORS.png), rgb(30, 30, 31);
     background-size: contain;
-    background-position: relative;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -144,14 +141,44 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 304px) {
+@media screen and (max-width: 768px) {
     #button1,
     #button2,
     #button3 {
-        line-height: 0;
-        color: white;
-        border: solid white 0;
-        padding: 0;
-        background: none;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+
+    #button1 p,
+    #button2 p,
+    #button3 p {
+        font-size: 1rem;
+        top: 100px;
+    }
+
+    #processor img {
+        width: 30vmin;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #button1,
+    #button2,
+    #button3 {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+    }
+
+    #button1 p,
+    #button2 p,
+    #button3 p {
+        font-size: 0.8rem;
+        top: 70px;
+    }
+
+    #processor img {
+        width: 20vmin;
     }
 }
